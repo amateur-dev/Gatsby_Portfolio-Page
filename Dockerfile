@@ -7,6 +7,6 @@ RUN apt install sudo -y
 RUN sudo apt install nodejs -y
 RUN sudo apt install npm -y
 RUN sudo apt install git -y
-RUN npm install --global gatsby-cli
-RUN npm install -g @sanity/cli && sanity init
+# RUN npm install --global gatsby-cli
+# RUN npm install -g @sanity/cli && sanity init
 CMD tail -f /dev/null
