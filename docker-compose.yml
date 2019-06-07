@@ -3,10 +3,10 @@ services:
   web-app:
     build: .
     container_name: gatsby_portfolio
-    expose:
-      - "5000"
     ports:
+      - "8000:8000"
       - "7000:7000"
+      - "3333:3333"
     volumes:
       - .:/home
     environment:
